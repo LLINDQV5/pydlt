@@ -3,7 +3,7 @@
 from datetime import datetime, timezone
 from typing import List, Optional, cast
 
-from pydlt.header import (
+from .header import (
     ExtendedHeader,
     MessageBusInfo,
     MessageControlInfo,
@@ -14,7 +14,7 @@ from pydlt.header import (
     StandardHeader,
     StorageHeader,
 )
-from pydlt.payload import Argument, NonVerbosePayload, Payload, VerbosePayload
+from .payload import Argument, NonVerbosePayload, Payload, VerbosePayload
 
 ###############################################################################
 # DLT Message of the DLT protocol

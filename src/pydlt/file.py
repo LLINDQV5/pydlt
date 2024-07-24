@@ -5,8 +5,8 @@ import struct
 from pathlib import Path
 from typing import Iterator, List, Optional, Union
 
-from pydlt.header import StandardHeader, StorageHeader
-from pydlt.message import DltMessage
+from .header import StandardHeader, StorageHeader
+from .message import DltMessage
 
 
 class DltFileReader:

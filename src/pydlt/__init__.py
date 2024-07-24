@@ -1,7 +1,7 @@
 # Import all classes in the sub modules of pydlt
 # F401 is ignored because they will be used from not here but a user of the library
-from pydlt.file import DltFileReader, DltFileWriter  # noqa: F401
-from pydlt.header import (  # noqa: F401
+from .file import DltFileReader, DltFileWriter  # noqa: F401
+from .header import (  # noqa: F401
     ExtendedHeader,
     MessageBusInfo,
     MessageControlInfo,
@@ -12,8 +12,8 @@ from pydlt.header import (  # noqa: F401
     StandardHeader,
     StorageHeader,
 )
-from pydlt.message import DltMessage  # noqa: F401
-from pydlt.payload import (  # noqa: F401
+from .message import DltMessage  # noqa: F401
+from .payload import (  # noqa: F401
     Argument,
     ArgumentBool,
     ArgumentFloat32,
